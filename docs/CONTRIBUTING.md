@@ -152,8 +152,8 @@ git push origin feature/your-feature-name
 ```
 
 2. Создайте Pull Request в GitHub:
-   - **Base**: `develop`
-   - **Head**: `your-fork:feature/your-feature-name`
+    - **Base**: `develop`
+    - **Head**: `your-fork:feature/your-feature-name`
 
 3. Заполните шаблон PR:
 
