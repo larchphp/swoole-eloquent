@@ -1,0 +1,45 @@
+{
+    "name": "swoole-eloquent/swoole-eloquent",
+    "description": "Асинхронная PHP-библиотека, объединяющая Swoole и Eloquent ORM для высокопроизводительных backend-сервисов",
+    "type": "library",
+    "keywords": ["swoole", "eloquent", "orm", "async", "coroutine", "postgresql", "mysql"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Swoole-Eloquent Contributors"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-swoole": "*",
+        "ext-pgsql": "*",
+        "illuminate/database": "^10.0|^11.0",
+        "illuminate/support": "^10.0|^11.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "mockery/mockery": "^1.6",
+        "phpstan/phpstan": "^1.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "SwooleEloquent\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SwooleEloquent\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test-coverage": "phpunit --coverage-html coverage",
+        "stan": "phpstan analyse src tests"
+    }
+}
